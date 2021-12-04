@@ -1,14 +1,15 @@
 import Invitation from '../model/invitation.js';
+import * as DataUtil from '../util/dataUtil.js';
 
 export function getByRefNumber(req, res, next) {
     console.log('Start execute get by ref number: ' + req.params.ref_number);
     
     Invitation.findOne({
         where: {
-            ref_number: req.params.ref_number
+            refNumber: req.params.ref_number
         }
     }).then(data => {
-        res.json({data: data}); 
+        res.json(DataUtil.buildResponse(data, 'SUCCESS')); 
     }).catch(err => {
         res.status(500).send({
             message:

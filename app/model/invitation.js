@@ -8,12 +8,13 @@ const Invitation = db.define('invitation', {
         defaultValue: "nextval('id_invitation_seq')"
     },
     name: Sequelize.STRING,
-    ref_number: Sequelize.STRING,
+    refNumber: Sequelize.STRING,
     url: Sequelize.STRING
 }, {
     tableName: 'invitation',
     createdAt: false,
-    updatedAt: false
+    updatedAt: false,
+    underscored: true
 });
 
 export default Invitation;
