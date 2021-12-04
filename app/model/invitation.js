@@ -1,7 +1,7 @@
 import Sequelize from 'sequelize';
-import conn from '../config/database.js'
+import db from '../config/database.js'
 
-const Invitation = conn.define('invitation', {
+const Invitation = db.define('invitation', {
     id: {
         type: Sequelize.INTEGER,
         primaryKey: true,
