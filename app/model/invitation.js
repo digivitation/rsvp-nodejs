@@ -7,7 +7,8 @@ const Invitation = db.define('invitation', {
         primaryKey: true,
         defaultValue: "nextval('id_invitation_seq')"
     },
-    name: Sequelize.STRING,
+    couple_name: Sequelize.STRING,
+    guest_name: Sequelize.STRING,
     refNumber: Sequelize.STRING,
     url: Sequelize.STRING
 }, {
