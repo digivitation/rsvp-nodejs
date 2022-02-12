@@ -14,3 +14,5 @@ CREATE TABLE "greeting_card" (
   "guest_name" varchar(255) NOT NULL,
   "message" varchar(500) NOT NULL
 );
+
+ALTER TABLE invitation ADD COLUMN is_gift_confirmed boolean default false not null;

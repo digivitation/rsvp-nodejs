@@ -6,7 +6,7 @@ export function build(status, message, data) {
         data = JSON.parse(JSON.stringify(data));
         data = snakecaseKeys(data);
     }
-    else data = {};
+    else data = null;
     return {
         status: status,
         message: message,
