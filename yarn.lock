@@ -1329,6 +1329,11 @@ typedarray-to-buffer@^3.1.5:
   dependencies:
     is-typedarray "^1.0.0"
 
+umoji@^2.0.0:
+  version "2.0.0"
+  resolved "https://registry.yarnpkg.com/umoji/-/umoji-2.0.0.tgz#f2cb940c114d5434a0b6ebc2c8af059df8515d3b"
+  integrity sha512-k5W2i3J3xYWskt1dLxT9nx+g9FhxQYQLqw7MBfy9B11FRGkqdxg2WqZFR35BPgj/XAQiIanI5bENMuhCwre0Eg==
+
 undefsafe@^2.0.5:
   version "2.0.5"
   resolved "https://registry.yarnpkg.com/undefsafe/-/undefsafe-2.0.5.tgz#38733b9327bdcd226db889fb723a6efd162e6e2c"

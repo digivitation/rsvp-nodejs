@@ -8,7 +8,7 @@ const app = express();
 const PORT = process.env.SERVER_PORT;
 
 var corsOptions = {
-    origin: "http://localhost:8787"
+    origin: "http://localhost:8000"
 };
 
 app.use(cors(corsOptions));

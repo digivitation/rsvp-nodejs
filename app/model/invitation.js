@@ -3,9 +3,9 @@ import db from '../config/database.js'
 
 const Invitation = db.define('invitation', {
     id: {
-        type: Sequelize.INTEGER,
+        type: Sequelize.BIGINT,
         primaryKey: true,
-        defaultValue: "nextval('id_invitation_seq')"
+        defaultValue: Sequelize.literal("nextval('id_invitation_seq')")
     },
     couple_name: Sequelize.STRING,
     guest_name: Sequelize.STRING,
