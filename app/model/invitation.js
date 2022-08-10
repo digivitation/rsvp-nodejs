@@ -7,11 +7,27 @@ const Invitation = db.define('invitation', {
         primaryKey: true,
         defaultValue: Sequelize.literal("nextval('id_invitation_seq')")
     },
-    coupleName: Sequelize.STRING,
-    guestName: Sequelize.STRING,
-    refNumber: Sequelize.STRING,
-    url: Sequelize.STRING,
-    isGiftConfirmed: Sequelize.BOOLEAN
+    coupleName: {
+        type: Sequelize.STRING,
+        allowNull: false
+    },
+    guestName: {
+        type: Sequelize.STRING,
+        allowNull: false
+    },
+    refNumber: {
+        type: Sequelize.STRING,
+        allowNull: false
+    },
+    url: {
+        type: Sequelize.STRING,
+        allowNull: false
+    },
+    isGiftConfirmed: {
+        type: Sequelize.BOOLEAN,
+        allowNull: false,
+        defaultValue: false
+    }
 }, {
     tableName: 'invitation',
     createdAt: false,

@@ -21,6 +21,7 @@
     "pg-hstore": "^2.3.4",
     "sequelize": "^6.12.0-alpha.1",
     "snakecase-keys": "^5.1.2",
-    "umoji": "^2.0.0"
+    "umoji": "^2.0.0",
+    "unicodechar-string": "^1.0.0"
   }
 }

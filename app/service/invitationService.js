@@ -13,7 +13,7 @@ export const getByRefNumber = async(req, res, next) => {
         });
 
         if (invitation == null) {
-            throw ExceptionUtil.build("DATA_NOT_FOUND", "Invitation not found!");
+            throw ExceptionUtil.build("DATA_NOT_FOUND", "Undangan tidak tersedia.");
         }
         res.json(ResponseUtil.build('SUCCESS', null, invitation)); 
     } catch (error) {

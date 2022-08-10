@@ -1960,6 +1960,11 @@ underscore@^1.13.1:
   resolved "https://registry.yarnpkg.com/underscore/-/underscore-1.13.1.tgz#0c1c6bd2df54b6b69f2314066d65b6cde6fcf9d1"
   integrity sha512-hzSoAVtJF+3ZtiFX0VgfFPHEDRm7Y/QPjGyNo4TVdnDTdft3tr8hEkD25a1jC+TjTuE7tkHGKkhwCgs9dgBB2g==
 
+unicodechar-string@^1.0.0:
+  version "1.0.0"
+  resolved "https://registry.yarnpkg.com/unicodechar-string/-/unicodechar-string-1.0.0.tgz#cb948f451deb90c6fb4bea1d6bfe5c95c58558fe"
+  integrity sha512-ehPpeWwL1S0Fq18Rq/khd2eyyV5ueuEOPh8LNcSby4gSjXHLPeaIUCApNlpPgSaGBvnmIK6SiLp7CSDJp8H0pQ==
+
 unique-string@^2.0.0:
   version "2.0.0"
   resolved "https://registry.yarnpkg.com/unique-string/-/unique-string-2.0.0.tgz#39c6451f81afb2749de2b233e3f7c5e8843bd89d"

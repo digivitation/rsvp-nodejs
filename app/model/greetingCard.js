@@ -4,11 +4,22 @@ import db from '../config/database.js'
 const GreetingCard = db.define('greeting_card', {
     id: {
         type: Sequelize.BIGINT,
+        allowNull: false,
         primaryKey: true,
         defaultValue: Sequelize.literal("nextval('id_greeting_card_seq')")
     },
-    guest_name: Sequelize.STRING,
-    message: Sequelize.STRING
+    refNumber: {
+        type: Sequelize.STRING,
+        allowNull: false
+    },
+    guestName: {
+        type: Sequelize.STRING,
+        allowNull: false
+    },
+    message: {
+        type: Sequelize.STRING,
+        allowNull: false
+    }
 }, {
     tableName: 'greeting_card',
     createdAt: false,

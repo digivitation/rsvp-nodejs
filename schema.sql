@@ -16,3 +16,4 @@ CREATE TABLE "greeting_card" (
 );
 
 ALTER TABLE invitation ADD COLUMN is_gift_confirmed boolean default false not null;
+ALTER TABLE greeting_card ADD COLUMN ref_number varchar(255) not null;
