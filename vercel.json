@@ -3,6 +3,6 @@
         "enabled": false,
         "silent": true
     },
-    "builds": [{ "src": "app.js", "use": "@now/node" }],
+    "builds": [{ "src": "app.js", "use": "@vercel/node" }],
     "routes": [{ "src": "(.*)", "dest": "app.js" }]
 }
