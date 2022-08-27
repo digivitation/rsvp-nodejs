@@ -5,6 +5,7 @@ import routes from  "./routes.js";
 
 dotenv.config();
 const app = express();
+const PORT = process.env.PORT || process.env.SERVER_PORT;
 
 var corsOptions = {
     origin: "http://localhost:8000"
@@ -18,4 +19,6 @@ app.use(urlencoded({
 
 app.use('/api', routes);
 
-export default app
+app.listen(PORT, () => {
+  console.log("Running on port ", PORT);
+});
