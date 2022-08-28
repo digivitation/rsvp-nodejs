@@ -7,8 +7,17 @@ dotenv.config();
 const app = express();
 const PORT = process.env.PORT || process.env.SERVER_PORT;
 
+const origins = ["http://localhost:8000", "https://wedding.piinalpin.com"]
 var corsOptions = {
-    origin: "http://localhost:8000"
+    origin: function (origin, callback) {
+      if (origins.indexOf(origin) !== -1) {
+        callback(null, true)
+      } else {
+        callback(null, false)
+      }
+    },
+    methods: "GET,HEAD,PUT,PATCH,POST,DELETE,OPTIONS",
+    optionsSuccessStatus: 200 // some legacy browsers (IE11, various SmartTVs) choke on 204
 };
 
 app.use(cors(corsOptions));
