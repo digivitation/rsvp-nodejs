@@ -10,6 +10,10 @@
   "scripts": {
     "dev": "nodemon server"
   },
+  "engines" : { 
+    "npm" : ">=7.0.0",
+    "node" : ">=16.0.0"
+  },
   "type": "module",
   "dependencies": {
     "cors": "^2.8.5",
